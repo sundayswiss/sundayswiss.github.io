@@ -1,0 +1,22 @@
+package table;
+
+public class Account {
+	public String name;
+	public int rank;
+	public String email;
+	public int wins;
+	public int losses;
+	public double winloss = wins/(losses+wins);
+	
+	public Account[] arr = null;
+	
+	public Account garguno = new Account("garguno");
+	garguno.rank = 2;
+	garguno.email = "garguno@iastate.edu";
+	
+	
+	
+	public Account(String name){
+		this.name = name;
+	}
+}
