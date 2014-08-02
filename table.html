@@ -11,21 +11,19 @@
 	
 </head>
 <body>
-<p>in order to do javascript .. YOU NEED TO WRITE 
-</p><p>'      (<)script type="text/javascript"(>) 
-</p><p>document.write(//stuff//); 
-</p><p> OR Key[] arr;
-</p><p> OR for(int i = 0; i (<) urMom; i++){ }
-</p><p>(<)/script(>)      '
-</p>
+
 
 <script type="text/javascript">
-	var addNums(x,y){
+	function addNums(x,y){
 		var z = x + y;
 		document.write(z);
+	}	
+	
+	function Account(name){
+		this.name = name;
+		this.site = "http://www.chess.com/members/view/" + name;
 	}
-
-	function addNums(2,3);
+	var fourth = Account(garguno);
 	
 </script>
 
@@ -38,7 +36,7 @@
 	<tr>
 		<td>Ari</td>
 		<td><g>Hazel</g></td>
-		<td>5'4</td>
+		<td> <script type="text/javascript"> addNums(2,3) </script> </td>
 	</tr>
 	<tr>
 		<td><a href="http://www.chess.com/members/view/UnclaimedSalmon">Quinn</a></td>
@@ -51,10 +49,14 @@
 		<td>2Short</td>
 	</tr>
 	<tr>
-		<td>Matt</td>
+		<td> 
+			<a href=fourth.site> fourth.name</a>
+		</td>
 		<td>unknown(Asian)</td>
+
 		<td>8-foot-cant-dunk</td>
-	</tr>
+
+		</tr>
 </table>
 
 <form>
@@ -62,5 +64,6 @@
 </form>	
 	
 <a href="index.html">back home</a>
+<script type="text/javascript"> document.write(fourth.site); </script>
 </body>
 </html
