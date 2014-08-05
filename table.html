@@ -1,5 +1,6 @@
 <doctype html>
 <html>
+favicon.ico
 <head>
 	<style type="text/css">
 		g {color:green;}
@@ -8,6 +9,18 @@
 			background: #aaaacc url('bird.png') no-repeat fixed center;
 		}
 	</style>
+	
+	<script type="text/javascript">
+	function Account(name){
+		this.name = name;
+		this.site = getSite;
+	}
+	function getSite(){
+		var site = "http://www.chess.com/members/view/" + name;
+		return site
+	}
+	var fourth = new Account(garguno);
+	</script>
 	
 </head>
 <body>
@@ -18,12 +31,6 @@
 		var z = x + y;
 		document.write(z);
 	}	
-	
-	function Account(name){
-		this.name = name;
-		this.site = "http://www.chess.com/members/view/" + name;
-	}
-	var fourth = Account(garguno);
 	
 </script>
 
@@ -50,7 +57,7 @@
 	</tr>
 	<tr>
 		<td> 
-			<a href=fourth.site> fourth.name</a>
+			<a href=site> fourth.name</a>
 		</td>
 		<td>unknown(Asian)</td>
 
@@ -64,6 +71,6 @@
 </form>	
 	
 <a href="index.html">back home</a>
-<script type="text/javascript"> document.write(fourth.site); </script>
+<script type="text/javascript"> document.write(fourth.name); </script>
 </body>
 </html
