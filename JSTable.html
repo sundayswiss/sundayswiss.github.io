@@ -4,6 +4,17 @@
 	</head>
 	
 	<body>
-	<p> hello </p>
+	
+	//Connect to database
+	<?php
+	$db = mysql_connect("a2412233_ss","a2412233_ss","Sleepyhead1414");
+	
+	if (! $db){
+		die("Database connection failed: " . mysql_error());
+	}
+	else
+		echo("Success!");
+		
+	
 	</body>
 </html>
